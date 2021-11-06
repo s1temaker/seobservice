@@ -1,0 +1,144 @@
+@import "../fonts/fonts.css";
+
+/* main */
+
+html,
+body {
+    font: normal 15px/26px CeraPro;
+    color: #373736;
+    background-color: #373736;
+}
+
+#wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+
+/*
+h1,
+.h1 {
+    font: ;
+    color: ;
+    letter-spacing: ;
+}
+
+h2,
+.h2 {
+    font: ;
+    color: ;
+    letter-spacing: ;
+}
+
+p {
+    font: ;
+    color: ;
+}
+
+a {}
+*/
+
+a:hover {
+    color: #FCD9A6!important;
+    text-decoration: none;
+    transition: color 500ms ease;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    max-width: 1470px;
+}
+
+
+/* main */
+
+
+/* ico */
+
+.ico.instagram {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-image: url(../imgs/instagram.svg);
+    transition: all 500ms ease;
+}
+
+a:hover .ico.instagram {
+    background-image: url(../imgs/instagram_hover.svg);
+}
+
+
+/* ico */
+
+
+/* button */
+
+.btn {
+    padding: 1.35rem 3.35rem;
+    font: 600 18px/18px Neris;
+    color: #4F4333;
+    border: 0 none;
+    box-shadow: 0px 2px 30px rgba(231, 178, 113, 0.25);
+    border-radius: 4px;
+}
+
+.btn.btn-primary {
+    background-color: #FCD9A6;
+}
+
+.btn.btn-primary:hover {
+    color: #fff;
+    background-color: #4F4333;
+}
+
+
+/* button */
+
+
+/* header */
+
+#header a.logo {
+    min-height: 49px;
+    padding-left: 245px;
+    font: normal 15px/20px CeraPro;
+    color: #fff;
+    background-image: url(../imgs/logo.svg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: 0;
+}
+
+#header .border-bottom {
+    border-color: rgba(255, 255, 255, .2)!important;
+}
+
+#header button[data-toggle="modal"] {
+    padding: 2.335rem 4.335rem;
+    font: 600 20px/20px Neris;
+    box-shadow: 0px 4px 30px rgba(103, 80, 222, 0.1);
+    border-radius: 2px;
+}
+
+#header .phone__box a {
+    font: bold 18px/26px CeraPro;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* header */
+
+
+/* mainMenu */
+
+#mainMenu .nav-link {
+    font-size: 18px;
+    color: #fff;
+    transition: color 500ms ease;
+}
+
+
+/* mainMenu */
