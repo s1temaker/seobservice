@@ -157,6 +157,82 @@
                     </div>
                 </div>
             </section>
+            <section id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="h2 text-white">Наши работы</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="contaner-fluid mb-4">
+                    <div class="owl-carousel owl__left">
+                        <div class="card">
+                            <img src="assets/images/portfolio/img1.jpg" class="card-img" alt="">
+                            <a href="" class="stretched-link" target="_blank"></a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/portfolio/img2.jpg" class="card-img" alt="">
+                            <a href="" class="stretched-link" target="_blank"></a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/portfolio/img3.jpg" class="card-img" alt="">
+                            <a href="" class="stretched-link" target="_blank"></a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/portfolio/img2.jpg" class="card-img" alt="">
+                            <a href="" class="stretched-link" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contaner-fluid mb-4">
+                    <div class="owl-carousel owl__center">
+                        <div class="card">
+                            <img src="assets/images/portfolio/img3.jpg" class="card-img" alt="">
+                            <a href="" class="stretched-link" target="_blank"></a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/portfolio/img2.jpg" class="card-img" alt="">
+                            <a href="" class="stretched-link" target="_blank"></a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/portfolio/img1.jpg" class="card-img" alt="">
+                            <a href="" class="stretched-link" target="_blank"></a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/portfolio/img2.jpg" class="card-img" alt="">
+                            <a href="" class="stretched-link" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contaner-fluid mb-5">
+                    <div class="owl-carousel owl__left">
+                        <div class="card">
+                            <img src="assets/images/portfolio/img2.jpg" class="card-img" alt="">
+                            <a href="" class="stretched-link" target="_blank"></a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/portfolio/img3.jpg" class="card-img" alt="">
+                            <a href="" class="stretched-link" target="_blank"></a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/portfolio/img2.jpg" class="card-img" alt="">
+                            <a href="" class="stretched-link" target="_blank"></a>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/portfolio/img1.jpg" class="card-img" alt="">
+                            <a href="" class="stretched-link" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="col-auto">
+                            <button type="button" class="btn btn-primary">Все работы</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section id="callbackForm">
                 <div class="container">
                     <div class="row">
@@ -253,6 +329,32 @@
                 loop: true,
                 dots: true,
                 dotsContainer: "#mainSlider .owl__dots",
+            });
+            let $width = $(window).width() / 2.5;
+            $("#portfolio .owl-carousel.owl__left").owlCarousel({
+                loop: true,
+                autoWidth: true,
+                items: 3,
+                margin: 34,
+                dots: false,
+                onInitialize: () => {
+                    $("#portfolio .owl-carousel.owl__left").each((i, el) => {
+                        $(el).find('.card').css('width', $width);
+                    });
+                }
+            });
+            $("#portfolio .owl-carousel.owl__center").owlCarousel({
+                rtl: true,
+                loop: true,
+                autoWidth: true,
+                items: 3,
+                margin: 34,
+                dots: false,
+                onInitialize: () => {
+                    $("#portfolio .owl-carousel.owl__center").each((i, el) => {
+                        $(el).find('.card').css('width', $width);
+                    });
+                }
             });
         });
     </script>

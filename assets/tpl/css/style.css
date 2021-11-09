@@ -381,3 +381,25 @@ a:hover .ico.instagram {
 
 
 /* services */
+
+
+/* portfolio */
+
+#portfolio {
+    padding: 130px 0;
+}
+
+#portfolio .card {
+    background-color: transparent;
+    overflow: hidden;
+    border: 8px solid rgba(132, 130, 126, 0.1);
+    border-radius: 8px;
+    transition: transform 300ms ease;
+}
+
+#portfolio .card:hover {
+    transform: scale(1.02);
+}
+
+
+/* portfolio */
