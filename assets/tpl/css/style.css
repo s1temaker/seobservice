@@ -27,10 +27,17 @@ h2,
     color: #4F4F4F;
 }
 
-h5,
-.h5 {
+h4,
+.h4 {
     margin-bottom: 10px;
     font: 500 40px/50px CeraPro;
+    color: #4F4F4F;
+}
+
+h5,
+.h5 {
+    margin-bottom: 20px;
+    font: 500 30px/40px CeraPro;
     color: #4F4F4F;
 }
 
@@ -65,8 +72,55 @@ a:hover {
     margin-bottom: 30px;
 }
 
+.bg__light {
+    background-color: #F8F8F8;
+}
+
 
 /* main */
+
+
+/* form */
+
+label {
+    font: normal 16px/24px CeraPro;
+    color: #454442;
+}
+
+.form-control {
+    font: normal 16px/28px CeraPro;
+    color: #454442;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 2px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem #FCD9A6;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #848E99;
+}
+
+.form-control::-moz-placeholder {
+    color: #848E99;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #848E99;
+}
+
+.form-control::-ms-input-placeholder {
+    color: #848E99;
+}
+
+.form-control::placeholder {
+    color: #848E99;
+}
+
+
+/* form */
 
 
 /* ico */
@@ -106,6 +160,21 @@ a:hover .ico.instagram {
 .btn-primary:active,
 .btn-primary:focus,
 .btn-primary:visited {
+    color: #fff;
+    background-color: #4F4333!important;
+}
+
+.btn-secondary {
+    color: #fff;
+    background: #373736;
+    box-shadow: 0px 2px 30px rgba(231, 178, 113, 0.25);
+    border-radius: 4px;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus,
+.btn-secondary:visited {
     color: #fff;
     background-color: #4F4333!important;
 }
@@ -153,7 +222,7 @@ a:hover .ico.instagram {
 /* footer*/
 
 #footer {
-    padding-top: 225px;
+    padding-top: 100px;
     background-color: #373736;
 }
 
@@ -192,61 +261,31 @@ a:hover .ico.instagram {
 /* mainMenu */
 
 
-/* callbackForm */
+/* callbackFormBottom */
 
-#callbackForm {
-    background-color: #F8F8F8;
+#callbackFormBottom::before {
+    content: '';
+    width: 100%;
+    height: 165px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #373736;
 }
 
-#callbackForm form {
+#callbackFormBottom form {
     padding: 60px 50px;
-    margin-bottom: -165px;
     box-shadow: 0px 8px 120px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
 }
 
-#callbackForm label {
-    font: normal 16px/24px CeraPro;
-    color: #454442;
-}
-
-#callbackForm .form-control {
-    font: normal 16px/28px CeraPro;
-    color: #454442;
-    background: #FFFFFF;
-    border: 1px solid #DDDDDD;
-    border-radius: 2px;
-}
-
-#callbackForm .form-control:focus {
-    box-shadow: 0 0 0 0.2rem #FCD9A6;
-}
-
-#callbackForm .form-control::-webkit-input-placeholder {
-    color: #848E99;
-}
-
-#callbackForm .form-control::-moz-placeholder {
-    color: #848E99;
-}
-
-#callbackForm .form-control:-ms-input-placeholder {
-    color: #848E99;
-}
-
-#callbackForm .form-control::-ms-input-placeholder {
-    color: #848E99;
-}
-
-#callbackForm .form-control::placeholder {
-    color: #848E99;
-}
-
-#callbackForm .phone__box {
+#callbackFormBottom .phone__box {
     padding-left: 80px;
 }
 
-#callbackForm .phone__box::before {
+#callbackFormBottom .phone__box::before {
     content: '';
     width: calc(100% + 80px);
     height: calc(100% + 60px);
@@ -254,19 +293,19 @@ a:hover .ico.instagram {
     position: absolute;
     top: -60px;
     right: -80px;
-    background: #FCD9A6 url(../imgs/bg_callbackForm.svg) no-repeat 100% / cover;
+    background: #FCD9A6 url(../imgs/bg_callbackFormBottom.svg) no-repeat 100% / cover;
     border-radius: 8px;
 }
 
-#callbackForm .h2 {
+#callbackFormBottom .h2 {
     color: #454442;
 }
 
-#callbackForm .phone__box p {
+#callbackFormBottom .phone__box p {
     font: normal 16px/28px CeraPro;
 }
 
-#callbackForm .phone__box a {
+#callbackFormBottom .phone__box a {
     display: block;
     font: 500 50px/60px CeraPro;
     color: #454442;
@@ -274,13 +313,13 @@ a:hover .ico.instagram {
     transition: all 300ms ease;
 }
 
-#callbackForm .phone__box a:hover {
+#callbackFormBottom .phone__box a:hover {
     color: #454442!important;
     transform: scale(1.03);
 }
 
 
-/* callbackForm */
+/* callbackFormBottom */
 
 
 /* mainSlider */
@@ -403,3 +442,201 @@ a:hover .ico.instagram {
 
 
 /* portfolio */
+
+
+/* advance */
+
+#advance {
+    padding: 50px 0;
+}
+
+#advance .watchword {
+    font: 500 40px/54px CeraPro;
+}
+
+#advance .watchword span {
+    padding: 5px;
+    color: #373736;
+    background: #FCD9A6;
+    box-shadow: 0px 2px 30px rgba(231, 178, 113, 0.25);
+    border-radius: 2px;
+}
+
+#advance .dig {
+    font: 500 60px/72px CeraPro;
+}
+
+#advance ul p {
+    font-size: 18px;
+}
+
+
+/* advance */
+
+
+/* reviews */
+
+#reviews .owl-carousel::before {
+    content: '';
+    width: 100%;
+    height: 72px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #373736;
+}
+
+#reviews .owl-carousel .card {
+    border: 0 none;
+    box-shadow: 0px 8px 120px rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+#reviews .owl-carousel .card-body {
+    height: 72px;
+    padding: 14px 20px;
+    overflow: hidden;
+}
+
+#reviews .owl-carousel h4 {
+    margin: 0;
+    font: 500 18px/26px CeraPro;
+    color: #4F4F4F;
+}
+
+#reviews .owl-carousel p {
+    margin: 0;
+    font: normal 14px/18px CeraPro;
+    color: #999C9F;
+}
+
+
+/* reviews */
+
+
+/* willAllow */
+
+#willAllow {
+    padding: 100px 0;
+    background: #F8F8F8 url(../imgs/bg_willallow.svg) no-repeat 0 calc(100% - 50px);
+}
+
+#willAllow p {
+    font: 500 24px/34px CeraPro;
+    color: #4F4F4F;
+}
+
+
+/* willAllow */
+
+
+/* orderForm */
+
+#orderForm {
+    padding: 90px 0;
+    position: relative;
+    background-color: #FCD9A6;
+}
+
+#orderForm::before {
+    content: '';
+    width: 50%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    background: url(../imgs/bg_orderForm.svg) no-repeat 0 / cover;
+}
+
+
+/* orderForm */
+
+
+/* stepsWork */
+
+#stepsWork {
+    padding: 100px 0;
+}
+
+#stepsWork li {
+    font: normal 18px/26px CeraPro;
+    color: #4F4F4F;
+}
+
+#stepsWork ol {
+    list-style-type: none;
+    counter-reset: item;
+    padding: 0;
+}
+
+#stepsWork ol li {
+    position: relative;
+    min-height: 50px;
+    padding-left: 70px;
+}
+
+#stepsWork ol li:before {
+    content: counter(item);
+    counter-increment: item;
+    width: 50px;
+    height: 50px;
+    padding-top: 14px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font: 600 24px/18px Neris;
+    color: #4F4333;
+    text-align: center;
+    background: #FCD9A6;
+    box-shadow: 0px 8px 120px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+
+/* stepsWork */
+
+
+/* whatWillGet */
+
+#whatWillGet {
+    padding: 100px 0;
+}
+
+#whatWillGet .card {
+    padding: 65px 30px 30px 30px;
+    position: relative;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 120px rgba(0, 0, 0, 0.05);
+    border: 0 none;
+    border-radius: 8px;
+}
+
+#whatWillGet .card .ico {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -13px;
+    left: 30px;
+    background: #F2C37E;
+    box-shadow: 0px 8px 120px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+#whatWillGet .card h5 {
+    font: 500 24px/36px CeraPro;
+    color: #4F4F4F;
+}
+
+#whatWillGet .card p {
+    font: normal 18px/24px CeraPro;
+    color: #4F4F4F;
+}
+
+
+/* whatWillGet */
