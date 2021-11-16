@@ -64,7 +64,7 @@ a:hover {
     max-width: 1470px;
 }
 
-.text-biscuit {
+.text__biscuit {
     color: #FCD9A6!important;
 }
 
@@ -96,7 +96,9 @@ label {
 }
 
 .form-control:focus {
-    box-shadow: 0 0 0 0.2rem #FCD9A6;
+    border: 1px solid #454442;
+    outline: 0 none;
+    box-shadow: none;
 }
 
 .form-control::-webkit-input-placeholder {
@@ -129,12 +131,36 @@ label {
     width: 24px;
     height: 24px;
     display: block;
-    background-image: url(../imgs/instagram.svg);
+    background-image: url(../imgs/icons/instagram.svg);
     transition: all 500ms ease;
 }
 
 a:hover .ico.instagram {
-    background-image: url(../imgs/instagram_hover.svg);
+    background-image: url(../imgs/icons/instagram_hover.svg);
+}
+
+.ico.telegram {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-image: url(../imgs/icons/telegram.svg);
+    transition: all 500ms ease;
+}
+
+a:hover .ico.telegram {
+    background-image: url(../imgs/icons/telegram_hover.svg);
+}
+
+.ico.whatsapp {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-image: url(../imgs/icons/whatsapp.svg);
+    transition: all 500ms ease;
+}
+
+a:hover .ico.whatsapp {
+    background-image: url(../imgs/icons/whatsapp_hover.svg);
 }
 
 
@@ -185,18 +211,14 @@ a:hover .ico.instagram {
 
 /* header */
 
-#header {
-    background-color: #373736;
-}
-
 #header a.logo {
     min-height: 49px;
     padding-left: 245px;
     font: normal 15px/20px CeraPro;
     background-image: url(../imgs/logo.svg);
     background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: 0;
+    background-size: auto 49px;
+    background-position: 0 0;
 }
 
 #header .border-bottom {
@@ -227,12 +249,13 @@ a:hover .ico.instagram {
 }
 
 #footer a.logo {
-    width: 260px;
-    height: 59px;
+    min-width: 260px;
+    padding-top: 79px;
+    font: normal 18px/30px CeraPro;
     background-image: url(../imgs/logo.svg);
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: 0;
+    background-size: auto 59px;
+    background-position: 0 0;
 }
 
 #footer .copy {
@@ -244,7 +267,11 @@ a:hover .ico.instagram {
 }
 
 #footer .phone__box a {
-    font: bold 24px/35px CeraPro;
+    font: bold 24px/34px CeraPro;
+}
+
+#footer .phone__box a[href^="mailto:"] {
+    font: bold 18px/26px CeraPro;
 }
 
 
@@ -323,6 +350,10 @@ a:hover .ico.instagram {
 
 
 /* mainSlider */
+
+#mainSlider {
+    background: url(../imgs/bg_mainBanner.svg) no-repeat right 0;
+}
 
 #mainSlider .owl-item {
     overflow: hidden;
@@ -615,6 +646,15 @@ a:hover .ico.instagram {
     box-shadow: 0px 8px 120px rgba(0, 0, 0, 0.05);
     border: 0 none;
     border-radius: 8px;
+    transition: transform 300ms ease;
+}
+
+#whatWillGet .card:hover {
+    transform: scale(1.02);
+}
+
+#whatWillGet .card.bg__img {
+    background: url(../imgs/bg_whatwillget.svg) no-repeat 100% / cover;
 }
 
 #whatWillGet .card .ico {
